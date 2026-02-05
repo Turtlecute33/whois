@@ -517,16 +517,19 @@
     padding: 6px 8px;
     font-size: calc(12px * var(--font-scale));
   }
+  .construction-gif {
+    max-height: calc(24px * var(--font-scale));
+    image-rendering: pixelated;
+    flex: 0 0 auto;
+  }
+  .construction-gif.mirror {
+    transform: scaleX(-1);
+  }
   .construction-bar .construction-text {
     flex: 1;
     text-align: center;
     color: #606860;
     font-size: calc(10px * var(--font-scale));
-  }
-  .construction-bar img {
-    max-height: 30px;
-    vertical-align: middle;
-    flex: 0 0 auto;
   }
 
   /* -- Responsive adjustments -- */
@@ -633,9 +636,9 @@
 
   <!-- Under construction -->
   <div class="construction-bar">
-    <img src="img/under_construction.gif" alt="under construction">
+    <img src="img/under-construction-bulldozer.gif" alt="under construction" class="construction-gif">
     <span class="construction-text">this website has been under construction since before Bitcoin existed</span>
-    <img src="img/under_construction.gif" alt="under construction">
+    <img src="img/under-construction-bulldozer.gif" alt="under construction" class="construction-gif mirror">
   </div>
 
   <!-- MAIN LAYOUT -->
@@ -963,6 +966,12 @@
     "non sono comunista, non ci sono copyright" &#x00B7; turtlecute33 &#x00B7; 2024<br>
     best viewed at 1024x768 &#x00B7; worst viewed by the NSA<br>
     no turtles were harmed &#x00B7; several web developers were<br>
+    <span style="color:#606860; font-size: calc(11px * var(--font-scale));">
+      construction gif:
+      <a href="https://commons.wikimedia.org/wiki/File:Under-Construction-Bulldozer.gif">Under-Construction-Bulldozer.gif</a>
+      by <a href="https://commons.wikimedia.org/wiki/User:JMichaelTX">JMichaelTX</a>
+      (CC BY-SA 4.0)
+    </span><br>
     <div style="margin-top:8px;">
       <img src="img/Animated-pink-flickering-stars.gif" alt="stars" style="max-width:260px;">
     </div>
