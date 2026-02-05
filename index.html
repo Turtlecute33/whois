@@ -505,15 +505,19 @@
     .header-turtles { flex-wrap: wrap; gap: 10px; }
     .header h1 { font-size: 28px; letter-spacing: 3px; }
     .header .subtitle { letter-spacing: 3px; }
-    .layout { flex-direction: column; gap: 8px; }
-    .sidebar,
-    .content {
-      width: 100%;
-      min-width: 0;
+    .layout { flex-direction: row; gap: 8px; }
+    .sidebar {
+      width: 140px;
+      min-width: 140px;
     }
-    .content { border-left: 1px solid #2a2e2a; }
-    .content { order: 1; }
-    .sidebar { order: 2; }
+    .content {
+      min-width: 0;
+      border-left: none;
+      padding: 16px 18px;
+    }
+    .sidebar-section { padding: 8px 10px; }
+    .sidebar-title { letter-spacing: 2px; }
+    .nav a { padding-left: 8px; }
     .about-flex { flex-direction: column; align-items: center; text-align: center; }
     .about-flex .about-avatar { min-width: 0; }
     .skill-row { flex-wrap: wrap; gap: 6px; }
@@ -528,6 +532,7 @@
     .header .subtitle { font-size: 11px; }
     .header .jp { letter-spacing: 2px; }
     .marquee-bar { font-size: 10px; }
+    .sidebar { width: 120px; min-width: 120px; }
     .contact-table,
     .contact-table tr,
     .contact-table td { display: block; width: 100%; }
