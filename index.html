@@ -54,7 +54,7 @@
 
   a { color: #8cd4a4; text-decoration: none; }
   a:hover { color: #5cb87a; text-decoration: underline; }
-  img { image-rendering: auto; }
+  img { image-rendering: auto; max-width: 100%; height: auto; }
 
   /* -- Page wrapper -- */
   .page {
@@ -209,8 +209,8 @@
     justify-content: center;
   }
   .buttons-88x31 img {
-    width: 88px;
-    height: 31px;
+    width: 96px;
+    height: 34px;
     image-rendering: pixelated;
   }
 
@@ -495,6 +495,58 @@
     max-height: 28px;
     vertical-align: middle;
   }
+
+  /* -- Responsive adjustments -- */
+  @media (max-width: 860px) {
+    .page { margin: 12px auto; }
+    .header { padding: 14px 16px; }
+    .header-turtles { flex-wrap: wrap; gap: 10px; }
+    .header h1 { font-size: 28px; letter-spacing: 3px; }
+    .header .subtitle { letter-spacing: 3px; }
+    .layout { flex-direction: column; gap: 8px; }
+    .sidebar,
+    .content {
+      width: 100%;
+      min-width: 0;
+    }
+    .content { border-left: 1px solid #2a2e2a; }
+    .about-flex { flex-direction: column; align-items: center; text-align: center; }
+    .about-flex .about-avatar { min-width: 0; }
+    .skill-row { flex-wrap: wrap; gap: 6px; }
+    .skill-name { width: 100%; }
+    .skill-bar { flex: 1 1 100%; }
+    .skill-pct { width: 100%; text-align: right; }
+    .anime-columns { flex-direction: column; gap: 14px; }
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 24px; letter-spacing: 2px; }
+    .header .subtitle { font-size: 11px; }
+    .header .jp { letter-spacing: 2px; }
+    .marquee-bar { font-size: 10px; }
+    .contact-table,
+    .contact-table tr,
+    .contact-table td { display: block; width: 100%; }
+    .contact-table tr { margin-bottom: 8px; }
+    .contact-table .label {
+      text-align: left;
+      width: auto;
+      padding-bottom: 2px;
+      color: #8cd4a4;
+    }
+    .corner-deco { display: none; }
+  }
+
+  @media (min-width: 1200px) {
+    body { font-size: 16px; }
+    .page { max-width: 1200px; }
+    .header { padding: 22px 28px; }
+    .header h1 { font-size: 42px; letter-spacing: 6px; }
+    .content { padding: 22px 30px; }
+    .sidebar { width: 220px; min-width: 220px; }
+    .sidebar-title { font-size: 12px; }
+    .nav a { font-size: 14px; }
+  }
 </style>
 </head>
 <body>
@@ -731,7 +783,7 @@
           &#x2014; ancient proverb (source: trust me bro)
         </div>
 
-        <div style="display:flex; gap:24px; margin-top:14px;">
+        <div class="anime-columns" style="display:flex; gap:24px; margin-top:14px;">
           <div style="flex:1;">
             <div style="color:#d4a840; font-size:12px; margin-bottom:6px;">&#x2606; turtle wisdom &#x2606;</div>
             <ul class="anime-list">
