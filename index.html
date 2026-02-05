@@ -8,6 +8,8 @@
 <meta name="author" content="Turtlecute33">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0e0f0e">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/seaturtle142x72.gif" type="image/gif">
 <meta property="og:title" content="turtlecute33 - home">
 <meta property="og:description" content="Retro turtle-themed homepage about Bitcoin, privacy, and security. Projects, links, and 90s web vibes.">
 <meta property="og:type" content="website">
@@ -35,11 +37,15 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  :root {
+    --font-scale: 1;
+  }
+
   body {
     background-color: #0e0f0e;
     color: #b8bcb8;
     font-family: "MS PGothic", "Yu Gothic", Verdana, Geneva, sans-serif;
-    font-size: 14px;
+    font-size: calc(14px * var(--font-scale));
     line-height: 1.7;
   }
 
@@ -87,7 +93,7 @@
     text-align: center;
   }
   .header h1 {
-    font-size: 36px;
+    font-size: calc(36px * var(--font-scale));
     color: #5cb87a;
     font-weight: normal;
     letter-spacing: 5px;
@@ -96,13 +102,13 @@
   }
   .header .subtitle {
     color: #606860;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     letter-spacing: 6px;
     text-transform: uppercase;
   }
   .header .jp {
     color: #8cd4a4;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     margin-top: 6px;
     letter-spacing: 3px;
   }
@@ -133,7 +139,7 @@
     padding: 4px 0;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     color: #606860;
   }
   .marquee-bar span {
@@ -158,7 +164,7 @@
     min-width: 185px;
     background: #161816;
     border: 1px solid #2a2e2a;
-    font-size: 14px;
+    font-size: calc(14px * var(--font-scale));
   }
   .sidebar-section {
     padding: 10px 14px;
@@ -167,7 +173,7 @@
   .sidebar-section:last-child { border-bottom: none; }
   .sidebar-title {
     color: #5cb87a;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 8px;
@@ -179,7 +185,7 @@
     display: block;
     padding: 4px 0 4px 12px;
     color: #8cd4a4;
-    font-size: 14px;
+    font-size: calc(14px * var(--font-scale));
     border-left: 2px solid transparent;
     transition: border-color 0.2s;
   }
@@ -192,7 +198,7 @@
 
   /* Status box */
   .status-box {
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     color: #606860;
     line-height: 1.8;
   }
@@ -210,7 +216,7 @@
     justify-content: center;
   }
   .badge-sm {
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     padding: 1px 5px;
     border: 1px solid;
     background: rgba(0,0,0,0.3);
@@ -241,7 +247,7 @@
   /* Section headers */
   .content h2 {
     color: #5cb87a;
-    font-size: 17px;
+    font-size: calc(17px * var(--font-scale));
     font-weight: normal;
     letter-spacing: 2px;
     padding-bottom: 6px;
@@ -253,7 +259,7 @@
 
   .content h3 {
     color: #d4a840;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     font-weight: bold;
     margin: 12px 0 4px;
   }
@@ -277,11 +283,11 @@
   }
   .about-box .greeting {
     color: #5cb87a;
-    font-size: 17px;
+    font-size: calc(17px * var(--font-scale));
     margin-bottom: 8px;
   }
   .about-box .greeting .jp-text {
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     color: #606860;
   }
   .about-flex {
@@ -304,7 +310,7 @@
     display: flex;
     align-items: center;
     margin: 6px 0;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
   }
   .skill-name {
     width: 130px;
@@ -322,7 +328,7 @@
     width: 40px;
     text-align: right;
     color: #606860;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
   }
 
   /* -- Project cards -- */
@@ -334,16 +340,16 @@
   }
   .project-title {
     color: #d4a840;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     font-weight: bold;
     margin-bottom: 4px;
   }
   .project-desc {
     color: #808880;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     margin-bottom: 6px;
   }
-  .project a { font-size: 12px; }
+  .project a { font-size: calc(12px * var(--font-scale)); }
 
   /* -- Anime section -- */
   .anime-box {
@@ -355,7 +361,7 @@
   .anime-box .quote {
     color: #c08a9a;
     font-style: italic;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     text-align: center;
     padding: 10px;
     border-left: 2px solid #c08a9a;
@@ -366,7 +372,7 @@
     list-style: none;
     padding: 0;
     color: #808880;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
   }
   .anime-list li { padding: 2px 0; }
   .anime-list li::before {
@@ -380,7 +386,7 @@
   .contact-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
   }
   .contact-table td {
     padding: 5px 10px;
@@ -397,7 +403,7 @@
     text-align: center;
     margin: 14px 0;
     color: #606860;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
   }
   .counter {
     display: inline-block;
@@ -405,7 +411,7 @@
     border: 1px inset #222;
     padding: 3px 12px;
     font-family: "Courier New", monospace;
-    font-size: 14px;
+    font-size: calc(14px * var(--font-scale));
     color: #5cb87a;
     letter-spacing: 2px;
     margin: 4px 0;
@@ -418,7 +424,7 @@
     border: 1px outset #2a2e2a;
     color: #8cd4a4;
     padding: 5px 16px;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     font-family: inherit;
     cursor: pointer;
   }
@@ -431,7 +437,7 @@
   .links-list {
     list-style: none;
     padding: 0;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
   }
   .links-list li {
     padding: 3px 0;
@@ -449,10 +455,10 @@
     border: 1px solid #2a2e2a;
     margin-top: 8px;
     padding: 8px;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     color: #606860;
   }
-  .webring a { margin: 0 8px; font-size: 11px; }
+  .webring a { margin: 0 8px; font-size: calc(11px * var(--font-scale)); }
 
   /* -- Footer -- */
   .footer {
@@ -460,7 +466,7 @@
     padding: 14px;
     margin-top: 8px;
     color: #3a3e3a;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     border-top: 1px solid #1e201e;
   }
 
@@ -494,7 +500,7 @@
     background: rgba(212,168,64,0.04);
     padding: 12px;
     margin: 10px 0;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
   }
   .donate-box .btc { color: #d4a840; }
 
@@ -508,13 +514,13 @@
     border: 1px solid #2a2e2a;
     border-top: none;
     padding: 6px 8px;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
   }
   .construction-bar .construction-text {
     flex: 1;
     text-align: center;
     color: #606860;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
   }
   .construction-bar img {
     max-height: 30px;
@@ -527,7 +533,7 @@
     .page { margin: 12px auto; }
     .header { padding: 14px 16px; }
     .header-turtles { flex-wrap: wrap; gap: 10px; }
-    .header h1 { font-size: 28px; letter-spacing: 3px; }
+    .header h1 { font-size: calc(28px * var(--font-scale)); letter-spacing: 3px; }
     .header .subtitle { letter-spacing: 3px; }
     .layout { flex-direction: row; gap: 8px; }
     .sidebar {
@@ -552,12 +558,12 @@
   }
 
   @media (max-width: 600px) {
-    .header h1 { font-size: 24px; letter-spacing: 2px; }
-    .header .subtitle { font-size: 11px; }
+    .header h1 { font-size: calc(24px * var(--font-scale)); letter-spacing: 2px; }
+    .header .subtitle { font-size: calc(11px * var(--font-scale)); }
     .header .jp { letter-spacing: 2px; }
-    .marquee-bar { font-size: 10px; }
+    .marquee-bar { font-size: calc(10px * var(--font-scale)); }
     .sidebar { width: 120px; min-width: 120px; }
-    .construction-bar .construction-text { font-size: 11px; }
+    .construction-bar .construction-text { font-size: calc(11px * var(--font-scale)); }
     .contact-table,
     .contact-table tr,
     .contact-table td { display: block; width: 100%; }
@@ -572,21 +578,25 @@
   }
 
   @media (min-width: 1200px) {
-    body { font-size: 16px; }
+    body { font-size: calc(16px * var(--font-scale)); }
     .page { max-width: 1200px; }
     .header { padding: 22px 28px; }
-    .header h1 { font-size: 42px; letter-spacing: 6px; }
-    .header .subtitle { font-size: 13px; letter-spacing: 7px; }
-    .header .jp { font-size: 12px; letter-spacing: 4px; }
-    .marquee-bar { font-size: 13px; }
-    .construction-bar { font-size: 13px; }
-    .construction-bar .construction-text { font-size: 11px; }
+    .header h1 { font-size: calc(42px * var(--font-scale)); letter-spacing: 6px; }
+    .header .subtitle { font-size: calc(13px * var(--font-scale)); letter-spacing: 7px; }
+    .header .jp { font-size: calc(12px * var(--font-scale)); letter-spacing: 4px; }
+    .marquee-bar { font-size: calc(13px * var(--font-scale)); }
+    .construction-bar { font-size: calc(13px * var(--font-scale)); }
+    .construction-bar .construction-text { font-size: calc(11px * var(--font-scale)); }
     .content { padding: 22px 30px; }
-    .sidebar { width: 220px; min-width: 220px; font-size: 15px; }
-    .sidebar-title { font-size: 13px; }
-    .nav a { font-size: 15px; }
-    .status-box { font-size: 13px; }
-    .badge-sm { font-size: 11px; }
+    .sidebar { width: 220px; min-width: 220px; font-size: calc(15px * var(--font-scale)); }
+    .sidebar-title { font-size: calc(13px * var(--font-scale)); }
+    .nav a { font-size: calc(15px * var(--font-scale)); }
+    .status-box { font-size: calc(13px * var(--font-scale)); }
+    .badge-sm { font-size: calc(11px * var(--font-scale)); }
+  }
+
+  @media (min-width: 1440px) {
+    :root { --font-scale: 1.15; }
   }
 </style>
 </head>
@@ -649,7 +659,7 @@
       <div class="sidebar-section">
         <div class="sidebar-turtle">
           <img src="img/swimmingturtle150x150.gif" alt="kame-chan">
-          <div style="font-size:9px; color:#2a4a35; margin-top:4px;">kame-chan</div>
+          <div style="font-size: calc(9px * var(--font-scale)); color:#2a4a35; margin-top:4px;">kame-chan</div>
         </div>
       </div>
 
@@ -697,10 +707,10 @@
 
       <div class="sidebar-section" style="text-align:center;">
         <img src="img/starsgreen.gif" alt="stars" style="max-width:155px;">
-        <div style="color:#606860; font-size:9px; font-style:italic; margin-top:5px;">
+        <div style="color:#606860; font-size: calc(9px * var(--font-scale)); font-style:italic; margin-top:5px;">
           "memes are words<br>that can't be<br>pronounced"
         </div>
-        <div style="color:#2a4a35; font-size:8px; margin-top:8px;">
+        <div style="color:#2a4a35; font-size: calc(8px * var(--font-scale)); margin-top:8px;">
           turtle fact: turtles<br>can breathe through<br>their butts. google it.
         </div>
       </div>
@@ -722,7 +732,7 @@
         <div class="about-flex">
           <div class="about-avatar">
             <img src="img/babyshadow150x150.gif" alt="turtle avatar">
-            <div style="font-size:9px; color:#2a4a35; margin-top:2px;">it me</div>
+            <div style="font-size: calc(9px * var(--font-scale)); color:#2a4a35; margin-top:2px;">it me</div>
           </div>
           <div>
             <div class="greeting">
@@ -739,7 +749,7 @@
               in Italian. Podcast host at <strong style="color:#d4a840;">Priorato del Bitcoin</strong>.
               Yes, I named my podcast like a secret medieval order. No, I will not elaborate.
             </p>
-            <p style="color:#606860; font-size:12px; margin-top:10px; font-style:italic;">
+            <p style="color:#606860; font-size: calc(12px * var(--font-scale)); margin-top:10px; font-style:italic;">
               "Non sono comunista, non ci sono copyright." &#x2014; me, a literal turtle
             </p>
           </div>
@@ -821,7 +831,7 @@
 
         <div class="anime-columns" style="display:flex; gap:24px; margin-top:14px;">
           <div style="flex:1;">
-            <div style="color:#d4a840; font-size:12px; margin-bottom:6px;">&#x2606; turtle wisdom &#x2606;</div>
+            <div style="color:#d4a840; font-size: calc(12px * var(--font-scale)); margin-bottom:6px;">&#x2606; turtle wisdom &#x2606;</div>
             <ul class="anime-list">
               <li>slow and steady wins the race against mass surveillance</li>
               <li>my threat model includes everyone except turtles</li>
@@ -831,17 +841,17 @@
             </ul>
           </div>
           <div style="flex:1;">
-            <div style="color:#d4a840; font-size:12px; margin-bottom:6px;">current mood:</div>
-            <div style="text-align:center; font-size:22px; margin:10px 0;">
+            <div style="color:#d4a840; font-size: calc(12px * var(--font-scale)); margin-bottom:6px;">current mood:</div>
+            <div style="text-align:center; font-size: calc(22px * var(--font-scale)); margin:10px 0;">
               &#x0028;&#xFF89;&#x25D5;&#x30EE;&#x25D5;&#xFF09;&#xFF89;*:&#xFF65;&#xFF9F;&#x2727;
             </div>
-            <div style="text-align:center; color:#606860; font-size:11px; font-style:italic;">
+            <div style="text-align:center; color:#606860; font-size: calc(11px * var(--font-scale)); font-style:italic;">
               when the VPN connects<br>on the first try
             </div>
-            <div style="text-align:center; font-size:22px; margin:10px 0;">
+            <div style="text-align:center; font-size: calc(22px * var(--font-scale)); margin:10px 0;">
               (&#xB4;;&#x03C9;;&#xFF40;)
             </div>
-            <div style="text-align:center; color:#606860; font-size:11px; font-style:italic;">
+            <div style="text-align:center; color:#606860; font-size: calc(11px * var(--font-scale)); font-style:italic;">
               when someone says<br>"I have nothing to hide"
             </div>
           </div>
@@ -852,7 +862,7 @@
           your data is already leaked. you just don't know it yet. &#x280;&#x2580;&#x203F;&#x2580;&#x0029;
         </div>
 
-        <div style="text-align:center; margin:12px 0; color:#606860; font-size:11px;">
+        <div style="text-align:center; margin:12px 0; color:#606860; font-size: calc(11px * var(--font-scale));">
           <p>things I trust more than centralized services:</p>
           <p style="color:#8cd4a4;">a turtle crossing a highway &#x00B7; expired milk &#x00B7; "free wifi" at the airport &#x00B7; a Nigerian prince</p>
         </div>
@@ -868,7 +878,7 @@
       <!-- CONTACT -->
       <h2 id="contact"><span class="deco">-- </span>contact<span class="deco"> --</span></h2>
 
-      <p style="color:#606860; font-size:13px; margin-bottom:10px; text-align:center;">
+      <p style="color:#606860; font-size: calc(13px * var(--font-scale)); margin-bottom:10px; text-align:center;">
         want to talk about bitcoin, privacy, or turtles? PGP preferred.<br>
         if you're a government agent, no I don't. &#x0028;&#x256F;&#x00B0;&#x25A1;&#x00B0;&#xFF09;&#x256F;&#xFE35;&#x253B;&#x2501;&#x253B;
       </p>
@@ -907,7 +917,7 @@
       <div class="donate-box">
         <span class="btc">&#x20bf; feed the turtle</span><br>
         <span style="color:#606860;">sats only. no shitcoins. no PayPal. no "exposure".<br>the turtle has standards and a very expensive lettuce habit.</span><br>
-        <a href="https://turtlecute.org" style="font-size:11px;">&#x2192; donate via BTCPay on turtlecute.org</a>
+        <a href="https://turtlecute.org" style="font-size: calc(11px * var(--font-scale));">&#x2192; donate via BTCPay on turtlecute.org</a>
       </div>
 
       <!-- Divider -->
